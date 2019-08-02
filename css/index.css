@@ -1,3 +1,42 @@
+.jumbotron {
+    background-image: url("/images/poconos view.jpg");
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+    border-radius: 0%;
+}
+.jumbotron .container {
+    text-align: center;
+    color: white;
+    background:rgba(0,0,0,0.2);
+    padding: 2rem;
+    border: 5px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/*
+ORIGINALLY I USED THE FOLLOWING FOR A HERO IMAGE:
+.header-img {
+    background-image: url("/images/skyline.jpg");
+    position: relative;
+    background-size: contain;
+    color: lightgreen;
+    text-align: center;
+}
+.headerText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*/
+
+.email {
+    padding-left: 5%;
+}
+
 #mainFooter {
     text-align: center;
     font-size: 18px;
