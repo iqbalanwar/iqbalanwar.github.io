@@ -10,47 +10,57 @@
     <meta name="keywords" content="iqbal website, web dev, 
     software developer, iqbal anwar">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
 
-    <title>Iqbal Anwar</title>
+    <title>Iqbal A. Anwar</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-top" data-offset="50">
 
     <!--NAVBAR-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar-top" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">IAA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About me
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dummy Link</a>
+                        <a class="nav-link" href="#myBackground">Background</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Test Dropdown
+
+                    <!--li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Background
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Placeholder 1</a>
-                            <a class="dropdown-item" href="#">Placeholder 2</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separate Placeholder</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#experience">Experience</a>
+                            <a class="dropdown-item" href="#skills">Skills</a>
+                            <a class="dropdown-item" href="#achievements">Achievements</a>
                         </div>
+                    </li-->
+
+                    <!--li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -68,40 +78,123 @@
 
     <!--JUMBOTRON HERO IMAGE-->
     <div class="jumbotron">
-        <div class="container"> 
-            <h1 class="display-4">Hey, I'm Iqbal A. Anwar</h1>
+        <div class="container-fluid"> 
+            <h1 class="display-4">Hey, I'm Iqbal</h1>
             <p class="lead"> Computer Science and Math graduate <br>
-            Student and Programmer of Web Development </p>
+            Web Developer and Software Engineer </p>
             <hr class="my-4">
-            <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/iqbalaanwar" role="button" alt="Iqbal's LinkedIn">Learn more</a>
+            <!--a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/iqbalaanwar" role="button" alt="Iqbal's LinkedIn">Learn more</a-->
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/iqbalaanwar" target="_blank"></a>
+            <a class="fa fa-github" href="https://github.com/iqbalanwar" target="_blank"></a>
         </div>
     </div>
 
-    <div class="email">
-        <p>Feel free to contact me at <a href="mailto:iqbalaanwar@gmail.com">Iqbalaanwar@gmail.com</a></p>
-        <p></p>
+    <div class="container">
+        <div id="about-me" class="content-parts">
+            <h1 class="title">ABOUT ME</h1>
+            <div class="row">
+                <div class="col-md-8 sm-8">
+                    <p class="detail"><tab>I recently graduated from the City College of
+                            New York as an Applied Mathematics and Computer Science student, and my experience stems from my education
+                            at CCNY and my workplace tasks. I have taken several computer science courses, including discrete mathematics
+                            and object oriented programming, which developed my core understanding of computer programming and 
+                            development. Additionally, I have taken several mathematics courses, such as computational probability and 
+                            statistics, which have refined my competency for algorithmic and numerical thinking to comprehend technical 
+                            tasks. At my previous workplace, I was a web-developer and a project manager. The latter of these two roles
+                            had responsibilities involved in documentation of development-related progress and creating reports outlining 
+                            current tasks and future goals for the team. These project management duties enabled me to verbalize my 
+                            educational understanding of data and programming, resulting in strong team coordination.
+                    </p>
+                </div>
+                <div class="col-md-4 sm-4 text-center">
+                    <img alt="profile pic" class="profilePic img-thumbnail"/>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <hr>
-    <!--Forms-->
-    <!--form action="process.php" method="POST">
-        <div>
-            <label>First Name: </label>
-            <input type="text" name="firstName">
-        </div>
-        <div>
-            <label>Last Name: </label>
-            <input type="text" name="lastName">
-        </div>
-        <div>
-            <label>Message</label>
-            <textarea name="message"></textarea>
-        </div>
-    </form-->
+    <hr class="my-4"> <!--THIS IS A SECTION DIVIDER-->
+    
+    <h1 class="title">SKILLS AND EXPERIENCE</h1>
+    <div id="myBackground" class="carousel slide" data-ride="carousel" data-pause="hover">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="experience">
+                <!--img class="d-block w-100" src="/images/skyline.jpg" alt="First slide"-->
+                <h4>Education</h4>
+                <div class="information">
+                    <em><strong>City College of New York:</em></strong>
+                    <br>Bachelor of Science: Applied Mathematics, Computer Science
+                </div>
+            </div>
 
-    <footer id="mainFooter">
+            <div class="carousel-item" id="skills">
+                <h4>Skills</h4>
+                <div class="information">
+                    <em><strong>Programming:</em></strong>
+                    <br>High proficiency in C++, JavaScript, React, CSS3/HTML5, Bootstrap, Matlab,
+                    Python, SQL, MongoDB, and AWS. Have also learned Ruby on Rails and Java.
+
+                    <br>
+                    <em><strong>General:</em></strong>
+                    <br>Strong competency in Microsoft software, including Excel, Access and Azure, and
+                    in using JIRA for project management. Have experience in using AnyDesk for
+                    remote work, and Active Directory. Also have experience in IT (A+/NET+).  
+                </div>              
+            </div>
+
+            <div class="carousel-item" id="acheivements">
+                <h4>Achievements</h4>
+                <div class="information">
+                    <em><strong>Developer Week NYC 2018:</em></strong>
+                    <br><em>Wowza WebRTC – Invia</em>
+                    <ul style="text-align: left">
+                        <li><a href="https://www.wowza.com/blog/wowza-sponsors-low-latency-streaming-challenges-at-nyc-hackathon" target="_blank">Hackathon Winner Article</a></li>
+                        <li>Built an application that allows remote live-streaming while video chatting
+                            multiple users.</li>
+                        <li>Front-end was implemented in HTML and Bootstrap, while back-end used the
+                            Wowza WebRTC and related API for low-latency streaming</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myBackground" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myBackground" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <hr class="my-4"> <!--THIS IS A SECTION DIVIDER-->
+
+    <div class="container">
+        <div id="contact" class="content-parts">
+            <h1 class="title">CONTACT ME</h1>
+            <p>Feel free to contact me at <a href="mailto:iqbalaanwar@gmail.com">Iqbalaanwar@gmail.com</a></p>
+        </div>
+    </div>
+
+    <footer id="mainFooter" class="bg-dark">
+        <!--Forms-->
+        <!--form action="process.php" method="POST">
+            <div>
+                <label>First Name: </label>
+                <input type="text" name="firstName">
+            </div>
+            <div>
+                <label>Last Name: </label>
+                <input type="text" name="lastName">
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+        </form-->
         Copyright &copy; Iqbal Anwar, 2019
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

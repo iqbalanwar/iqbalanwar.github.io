@@ -1,18 +1,95 @@
+body {
+    background-color: #f1f1f1;
+    position: relative;
+}
+.content-parts {
+    padding: 2% 0% 2% 0%;
+}
+.my-4 {
+    border: 1px solid black;
+    max-width: 75%;
+}
+.title {
+    text-align: center;
+    padding-bottom: 3%;
+} 
+
+/*HEADER JUMBOTRON*/
 .jumbotron {
     background-image: url("/images/poconos view.jpg");
     background-size: cover;
     position: relative;
     height: 90vh;
     border-radius: 0%;
+
+    /*This line feels kinda hacky, there should be
+      a more responsive way: */
+    padding-top: 10%;
 }
-.jumbotron .container {
+.jumbotron .container-fluid {
     text-align: center;
     color: white;
     background:rgba(0,0,0,0.2);
     padding: 2rem;
     border: 5px solid rgba(0,0,0,0.1);
     border-radius: 10px;
-    z-index: 1;
+    z-index: 2;
+}
+.jumbotron .my-4 {
+    border: 1px solid white;
+    max-width: 50%;
+}
+/*FOR THE BUTTONS IN THE JUMBOTRON*/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none !important;
+    margin: 0px 2px 0px 2px;
+    border-radius: 100%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+.fa-github {
+    background-color: #c7c7c7;
+    color: rgb(39, 39, 39);
+}
+
+/*ABOUT ME*/
+.profilePic {
+    content: url("/images/profile_pic.jpg");
+    height: auto;
+    max-width: 65%;
+    border-radius: 100%;
+}
+
+/*SKILLS AND EXPERIENCE*/
+#myBackground {
+    text-align: center;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.information { /*Feels kinda hacky*/
+    padding: 0% 15% 0% 15%;
+}
+
+/*CONTACT ME*/
+
+/*FOOTER SECTION, MAYBE ADD A NAME, NUMBER, AND MESSAGE?*/
+#mainFooter {
+    text-align: center;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 1% 0% 1% 0%;
 }
 
 /*
@@ -32,14 +109,3 @@ ORIGINALLY I USED THE FOLLOWING FOR A HERO IMAGE:
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 */
-
-.email {
-    padding-left: 5%;
-}
-
-#mainFooter {
-    text-align: center;
-    font-size: 18px;
-    background-color: black;
-    color: white;
-}
