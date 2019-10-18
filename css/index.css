@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+header {
+    background: url("/images/skyline.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
+}
+.navbar a {
+    text-decoration: none !important;
+    font-size: 30px;
+    color: black;
+}
