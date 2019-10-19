@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #2b2b2b;
+    background-color: #072d5f;
     height: 100vh;
     display: flex;
 }
@@ -25,9 +25,30 @@ header {
 .intro > h1 {
     font-size: 6rem;
     padding-bottom: 5%;
+    /* text-shadow: 4px 4px #000000; */
 }
 .intro > p {
     font-size: 2.5rem;
+}
+.fa {
+    /* padding: 10px; */
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none !important;
+    margin: 0px 2px 0px 2px;
+    border-radius: 100%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+.fa-github {
+    background-color: #c7c7c7;
+    color: rgb(39, 39, 39);
 }
 
 
