@@ -53,7 +53,7 @@ header {
     color: black;
 }
 
-/* ========== CONTENT ========== */
+/* ======================================== CONTENT ======================================== */
 .container p {
     font-size: 1.4rem;
 }
@@ -81,11 +81,12 @@ header {
     height: 200px;
     border-radius: 100%;
     margin: auto;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none !important;
+    transition: all .2s ease-out;
 }
 .bgCircle img {
     width: 100px;
@@ -96,6 +97,12 @@ header {
 }
 .react_logo {
     width: 110px;
+}
+.bgCircle:hover {
+    background-color: #3d3d3d;
+    width: 220px;
+    height: 220px;
+    transition: all .2s ease-out;
 }
 
 /* ===== Footer ===== */
