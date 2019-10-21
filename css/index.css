@@ -20,7 +20,7 @@ header {
     text-align: center;
     border: 10px solid white;
     margin: auto;
-    width: 45%;
+    width: 55%;
 }
 .intro {
     color: white;
@@ -53,8 +53,7 @@ header {
     color: black;
 }
 
-/* ===== Content ===== */
-
+/* ========== CONTENT ========== */
 .container p {
     font-size: 1.4rem;
 }
@@ -68,8 +67,21 @@ header {
     margin: 3% 0%;
 }
 
-/* ===== Footer ===== */
+/* ===== About -> Skills ===== */
+.skills {
+    margin: 0% 5%;
+}
+.row {
+    display: flex;
+    margin-bottom: 5%;
+}
+img {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
 
+/* ===== Footer ===== */
 footer {
     background-color: #072d5f;
     height: 100vh;
