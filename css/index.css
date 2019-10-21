@@ -69,16 +69,33 @@ header {
 
 /* ===== About -> Skills ===== */
 .skills {
-    margin: 0% 5%;
+    /* margin: 0% 5%; */
 }
 .row {
     display: flex;
     margin-bottom: 5%;
 }
-img {
-    width: 10%;
-    height: 100%;
+.bgCircle {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
     margin: auto;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bgCircle img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.bgCircle p {
+    color: white;
+}
+.react_logo {
+    width: 110px;
 }
 
 /* ===== Footer ===== */
@@ -86,9 +103,10 @@ footer {
     background-color: #072d5f;
     height: 100vh;
 }
-.fa {
-    /* padding: 10px; */
+/* .fa {
+    padding: 10px;
     font-size: 30px;
+    height: 50px;
     width: 50px;
     text-align: center;
     text-decoration: none !important;
@@ -99,10 +117,25 @@ footer {
     opacity: 0.7;
 }
 .fa-linkedin {
-    background-color: #007bb5;
-    color: white;
+    background-color: white;
+    color: #072d5f;
 }
 .fa-github {
     background-color: #c7c7c7;
     color: rgb(39, 39, 39);
-}
+} */
+
+
+
+
+/* ========================================================= */
+/* 
+    To Do list: 
+    - Fix navbar, so it's space-around under 1000px,
+    and becomes hamburger menu under 750px
+
+    - Fix skills circles, so they become 2x4 under 1000px,
+    and single (or scoll menu?) At 750px
+
+    - Have a contact form and social media buttons at footer
+*/
