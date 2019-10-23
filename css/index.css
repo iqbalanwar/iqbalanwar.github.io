@@ -69,7 +69,7 @@ header {
 
 /* ===== About -> Skills ===== */
 .skills {
-    /* margin: 0% 5%; */
+    margin: 0% 5%;
 }
 .row {
     display: flex;
@@ -110,6 +110,20 @@ footer {
     background-color: #072d5f;
     height: 100vh;
 }
+footer h2 {
+    text-align: center;
+    color: white;
+}
+.sendEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .sendEmail input, textarea, button {
+    width: 25%;
+} */
+
+
 /* .fa {
     padding: 10px;
     font-size: 30px;
