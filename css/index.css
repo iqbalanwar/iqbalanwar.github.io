@@ -45,30 +45,31 @@ header {
 /* ===== Navbar ===== */
 .navbar {
     border-bottom: 5px solid #072d5f;
-}
-.navContent {
+    background-color: white;
     display: flex;
     justify-content: space-around;
     padding: 1.5%;
+    position: sticky;
+    top: 0;
 }
 .navbar a {
     text-decoration: none !important;
-    font-size: 30px;
+    font-size: 25px;
     color: black;
 }
 
 /* ======================================== CONTENT ======================================== */
 .container p {
     font-size: 1.4rem;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 .container h3 {
     font-size: 2rem;
-    margin: 3% 0%;
+    margin: 10% 0%;
 }
 
 /* ===== About ===== */
-#about {
+.about {
     display: flex;
 }
 .aboutText {
@@ -80,11 +81,21 @@ header {
     margin-bottom: 5%;
 }
 .skills {
-    margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+}
+
+.skills span {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.cursorLine {
+    background-color: black;
+    width: 10px;
+    margin-left: 1%;
 }
 
 .bgCircle {
