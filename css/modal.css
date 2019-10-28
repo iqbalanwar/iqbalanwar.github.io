@@ -32,7 +32,7 @@ I'll just make a separate css just for them.
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 35rem;
+    width: 45rem;
     border-radius: 0.5rem;
 }
 .show-modal {
@@ -44,8 +44,9 @@ I'll just make a separate css just for them.
 
 .close-button {
     float: right;
-    width: 1rem;
-    line-height: 1rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
@@ -71,6 +72,12 @@ I'll just make a separate css just for them.
 .about-project h3 {
     text-align: center;
 }
+.about-project p {
+    height: 205px;
+    overflow: scroll;
+    border: .5px solid black;
+    padding: 3%;
+}
 
 .tech-stack {
     margin: 5% 0;
@@ -84,5 +91,5 @@ I'll just make a separate css just for them.
     font-size: .7rem;
 }
 .tech-stack span:hover {
-    background-color: antiquewhite;
+    background-color: lightblue;
 }
