@@ -1,7 +1,6 @@
 /* =============================================
-I'm thinking, since the modals are a lot of work 
-on their own, I'll just make a separate css just
-for them.
+Since the modals are a lot of work on their own,
+I'll just make a separate css just for them.
 ============================================= */
 
 /* ================================= TRY ONE ================================= */
@@ -13,14 +12,6 @@ for them.
 /* ================================= TRY TWO ================================= */
 
 /* https://sabe.io/tutorials/how-to-create-modal-popup-box */
-
-/* <button class="trigger">Click here to trigger the modal!</button>
-<div class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h1>Hello, I am a modal!</h1>
-    </div>
-</div> */
 
 .modal {
     position: fixed;
@@ -41,13 +32,20 @@ for them.
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 24rem;
+    width: 35rem;
     border-radius: 0.5rem;
 }
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 .close-button {
     float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
+    width: 1rem;
+    line-height: 1rem;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
@@ -56,9 +54,35 @@ for them.
 .close-button:hover {
     background-color: darkgray;
 }
-.show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+
+.image-and-about-project {
+    display: flex;
+}
+.modal-image {
+    margin: 0 5% 0 -1%;
+    height: 300px;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: cover;
+}
+.about-project {
+    width: 100%;
+}
+.about-project h3 {
+    text-align: center;
+}
+
+.tech-stack {
+    margin: 5% 0;
+    cursor: default;
+}
+.tech-stack span {
+    display: inline-block;
+    border: .5px solid black;
+    border-radius: 0.5rem;
+    padding: 1% 2%;
+    font-size: .7rem;
+}
+.tech-stack span:hover {
+    background-color: antiquewhite;
 }

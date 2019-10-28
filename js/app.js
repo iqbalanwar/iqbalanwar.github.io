@@ -51,8 +51,13 @@ function windowOnClick(event) {
     }
 }
 
+// Opening dummy modals for all my projects
+// each project needs to be targetted individually
+// and load up either own content...
+// How? Idk yet lol
 for(let i=0; i < trigger.length; i++) {
     trigger[i].addEventListener("click", toggleModal);
 }
+
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
