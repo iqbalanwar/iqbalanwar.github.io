@@ -4,6 +4,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding: 9vh;
 }
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -11,6 +12,13 @@ body {
 .container {
     margin: 50px auto;
     width: 80%;
+}
+.container p {
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+}
+.container h2 {
+    font-size: 3rem;
 }
 h2 {
     font-size: 3rem;
@@ -20,7 +28,7 @@ h2 {
 
 /* ===== Header ===== */
 header {
-    background-color: #072d5f;
+    background-color: #305586;
     height: 100vh;
     display: flex;
 }
@@ -28,7 +36,8 @@ header {
     text-align: center;
     border: 10px solid white;
     margin: auto;
-    width: 55%;
+    width: 55vmin;
+    min-width: 45vw;
 }
 .intro {
     color: white;
@@ -37,19 +46,17 @@ header {
     padding: 5%;
 }
 .intro > h1 {
-    font-size: 6rem;
+    font-size: 10vmin;
     padding-bottom: 5%;
-    /* text-shadow: 4px 4px #000000; */
 }
 .intro > p {
-    font-size: 2.5rem;
+    font-size: 5vmin;
 }
 
 /* ===== Navbar ===== */
 .navbar {
-    border-bottom: 5px solid #072d5f;
+    border-bottom: 5px solid #305586;
     background-color: white;
-    opacity: .9;
     display: flex;
     justify-content: space-around;
     padding: 1.5%;
@@ -61,16 +68,11 @@ header {
     font-size: 25px;
     color: black;
 }
+.navbar a:hover {
+    color: royalblue;
+}
 
 /* ======================================== CONTENT ======================================== */
-.container p {
-    font-size: 1.4rem;
-    margin-bottom: 5%;
-}
-.container h3 {
-    font-size: 2rem;
-    margin: 10% 0%;
-}
 
 /* ===== About ===== */
 .about {
@@ -131,13 +133,16 @@ header {
 }
 
 /* ===== Projects ===== */
-#projects p {
+.projects {
+    display: flex;
+}
+.projects p {
     color: white;
 }
 .projectBox {
     background-color: black;
-    width: 200px;
-    height: 200px;
+    width: 200px; /*12vw*/
+    height: 200px; /*24vh*/
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -148,14 +153,14 @@ header {
 }
 .projectBox:hover {
     background-color: #3d3d3d;
-    width: 220px;
-    height: 220px;
+    width: 220px; /*14vw*/
+    height: 220px; /*26vh*/
     transition: all .2s ease-out;
 }
 
 /* ======================================== FOOTER ======================================== */
 footer {
-    background-color: #072d5f;
+    background-color: #305586;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -165,6 +170,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 30%;
+    min-width: 350px;
 }
 .sendEmail h2 {
     color: white;
@@ -179,7 +185,43 @@ input, textarea, button {
     font-size: 20px;
 }
 
+/* ======================================== MEDIA QUERIES ======================================== */
 
+/* @media only screen and (max-width: 1690px) { ...} */
+@media only screen and (max-width: 1280px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* @media only screen and (max-width: 980px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+@media only screen and (max-width: 736px) { 
+        /* .navbar {
+        border-bottom: 5px solid #305586;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5%;
+        position: sticky;
+        top: 0;
+    }
+    .navbar a {
+        text-decoration: none !important;
+        font-size: 25px;
+        color: black;
+    }
+    .navbar a:hover {
+        color: royalblue;
+    } */    
+}
+
+/* @media only screen and (max-width: 480px) { ... } */
 
 /* ========================================================= */
 /* 
