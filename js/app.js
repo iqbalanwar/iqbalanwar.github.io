@@ -1,6 +1,14 @@
-// for navbar:
-// if header can't be seen (height: 0vh?)
-// make navbar position fixed
+/* =============== RESPONSIVE NAV: =============== */
+
+function responsiveNav() {
+    let x = document.querySelector("#topNav");
+    if (x.className === "navbar") {
+      x.className = "responsive";
+    } else if (x.className === "responsive"){
+      x.className = "navbar";
+    }
+}
+// document.querySelector(".icon").addEventListener("click", responsiveNav);
 
 /* =============== TYPE 'Skills' TITLE: =============== */
 const blink = () => {
