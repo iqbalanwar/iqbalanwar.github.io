@@ -60,11 +60,13 @@ header {
 .intro > p {
     font-size: 5vmin;
     padding-bottom: 5%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid white;
 }
-
 .social-media {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 7%;
 }
 .social-media > a {
     color: white;
@@ -73,7 +75,24 @@ header {
 .social-media > a:hover {
     color: lightblue;
 }
-
+.view-btn {
+    color: white;
+    text-align: center;
+    text-decoration: none !important;
+    padding: 2%;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 350ms ease-in-out;
+}
+.fa-sort-down {
+    transform: translateY(-20%);
+    padding: 0 .5vw;
+}
+.view-btn:hover {
+    background-color: white;
+    color: #305586;
+    font-size: 3vmin;
+}
 /* ===== Navbar ===== */
 .navbar {
     border-bottom: 5px solid #305586;
