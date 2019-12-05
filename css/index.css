@@ -4,7 +4,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding: 9vh;
+  scroll-padding: 15vh;
 }
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -88,6 +88,8 @@ header {
 /* ===== About ===== */
 .about {
     display: flex;
+    border-bottom: 5px solid #305586;
+    padding-bottom: 5%;
 }
 .aboutText {
     margin-right: 10%;
@@ -216,10 +218,17 @@ input, textarea, button {
         font-size: 1.5vw;
     }
 }
-
+@media only screen and (max-width: 1024px) {
+    html {
+        scroll-padding: 6vh;
+    }
+}
 @media only screen and (max-width: 650px) {
     /* Eventually, this will be a carousel 
        For now, this is acceptable */
+    html {
+        scroll-padding: 6vh;
+    }
     .skills {
         width: 70vw;
     }
@@ -235,31 +244,36 @@ input, textarea, button {
     }
 }
 
-@media only screen and (max-width: 520px) { 
+@media only screen and (max-width: 520px) {
+    html {
+        scroll-padding: 10vh;
+    }
     .navbar a {
         display: none;
     }
     .navbar {
         display: block;
         text-align: right;
+        padding: 2.2vh 9.5vw 2.2vh 0;
     }
     .navbar .icon {
         display: block;
-        padding-right: 10vw;
     }
 }
 @media only screen and (max-width: 520px) { 
     /* Dropdown */
     .responsive {
-        position: relative;
-        /* display: flex; */
+        position: sticky;
+        top: 0;
+        background: white;
+        font-size: 1.5em;
     }
     .responsive a {
         display: block;
         text-align: left;
-        border-bottom: 1px solid #305586;
+        border-bottom: 5px solid #305586;
         text-decoration: none !important;
-        padding: 2vmin 10vmin;
+        padding: 4vmin 10vmin;
     }
     .responsive .icon {
         text-align: right;
