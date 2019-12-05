@@ -59,6 +59,19 @@ header {
 }
 .intro > p {
     font-size: 5vmin;
+    padding-bottom: 5%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+.social-media > a {
+    color: white;
+    font-size: 5vmin;
+}
+.social-media > a:hover {
+    color: lightblue;
 }
 
 /* ===== Navbar ===== */
@@ -284,9 +297,6 @@ input, textarea, button {
 /* ========================================================= */
 /* 
     To Do list: 
-    - Fix navbar, so it's space-around under 1000px,
-    and becomes hamburger menu under 750px
-
     - Fix skills circles, so they become 2x4 under 1000px,
     and single (or scoll menu?) At 750px
 
