@@ -18,7 +18,7 @@ body {
     margin-bottom: 5%;
 }
 .container h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 h2 {
     font-size: 3rem;
@@ -44,8 +44,7 @@ header {
     text-align: center;
     border: 10px solid white;
     margin: auto;
-    width: 55vmin;
-    min-width: 45vw;
+    min-width: 55vw;
 }
 .intro {
     color: white;
@@ -70,7 +69,8 @@ header {
 }
 .social-media > a {
     color: white;
-    font-size: 5vmin;
+    font-size: 6vmin;
+    transition: all 200ms ease-in-out;
 }
 .social-media > a:hover {
     color: lightblue;
@@ -140,11 +140,11 @@ header {
     text-align: center;
     color: black;
 }
-.cursorLine {
+/* .cursorLine {
     background-color: black;
     width: 10px;
     margin-left: 1%;
-}
+} */
 
 .skills {
     display: flex;
@@ -252,7 +252,7 @@ input, textarea, button {
 }
 @media only screen and (max-width: 1024px) {
     html {
-        scroll-padding: 6vh;
+        scroll-padding: 7.8vh;
     }
 }
 @media only screen and (max-width: 650px) {

@@ -1,4 +1,4 @@
-window.onload(alert(`My website is a work in progress. Please excuse the appearance.\nThank you!`));
+alert(`My website is a work in progress. Please excuse the appearance.\nThank you!`);
 /* =============== RESPONSIVE NAV: =============== */
 
 function responsiveNav() {
