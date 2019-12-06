@@ -276,7 +276,7 @@ input, textarea, button {
     }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 600px) {
     html {
         scroll-padding: 10vh;
     }
@@ -292,7 +292,7 @@ input, textarea, button {
         display: block;
     }
 }
-@media only screen and (max-width: 520px) { 
+@media only screen and (max-width: 600px) { 
     /* Dropdown */
     .responsive {
         position: sticky;
