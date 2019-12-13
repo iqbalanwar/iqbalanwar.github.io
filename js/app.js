@@ -59,9 +59,6 @@ const closeButton = document.querySelectorAll(".close-button");
 function toggleModal(targetModal) {
     targetModal.classList.toggle("show-modal");
 }
-function closeButtonToggleModal() {
-    modal.classList.toggle("show-modal");
-}
 
 // Bad solution, not DRY:
 function windowOnClick(event) {
