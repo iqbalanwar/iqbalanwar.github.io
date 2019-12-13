@@ -46,27 +46,51 @@ typed();
 
 /* =============== CLICK MODALS IN PROJECTS SECTION: =============== */
 
+// unused now:
 var modal = document.querySelector(".modal");
+
+var modal1 = document.querySelector("#modal-1");
+var modal2 = document.querySelector("#modal-2");
+
 var trigger = document.querySelectorAll(".projectBox");
 var closeButton = document.querySelector(".close-button");
 
-function toggleModal() {
-    modal.classList.toggle("show-modal");
+// Bad solution, not DRY:
+// possibly pass param name into toggleModal?
+
+function toggleModal1() {
+    modal1.classList.toggle("show-modal");
+}
+function toggleModal2() {
+    modal2.classList.toggle("show-modal");
 }
 
 function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
+    if (event.target === modal1) {
+        toggleModal1();
+    }
+    else if (event.target === modal2) {
+        toggleModal2();
     }
 }
 
-// Opening dummy modals for all my projects
-// each project needs to be targetted individually
-// and load up their own content...
-// How? Idk yet lol
-for(let i=0; i < trigger.length; i++) {
-    trigger[i].addEventListener("click", toggleModal);
-}
+// what I want to do
+// target all the modals in the modal
+// loop through and attach their respective modals?
 
-closeButton.addEventListener("click", toggleModal);
+// pass into toggleModal the chosen modal?
+// for(let i=0; i < trigger.length; i++) {
+//     trigger[i].addEventListener("click", toggleModal);
+// }
+
+trigger[0].addEventListener("click", toggleModal1);
+trigger[1].addEventListener("click", toggleModal2);
+
+
+closeButton.addEventListener("click", toggleModal1);
+closeButton.addEventListener("click", toggleModal2);
+
+
+
+
 window.addEventListener("click", windowOnClick);
