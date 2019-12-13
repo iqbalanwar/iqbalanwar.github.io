@@ -46,51 +46,50 @@ typed();
 
 /* =============== CLICK MODALS IN PROJECTS SECTION: =============== */
 
-// unused now:
-var modal = document.querySelector(".modal");
+const modal_1 = document.querySelector("#modal-1");
+const modal_2 = document.querySelector("#modal-2");
+const modal_3 = document.querySelector("#modal-3");
+const modal_4 = document.querySelector("#modal-4");
+const modal_5 = document.querySelector("#modal-5");
+const modal_6 = document.querySelector("#modal-6");
 
-var modal1 = document.querySelector("#modal-1");
-var modal2 = document.querySelector("#modal-2");
+const trigger = document.querySelectorAll(".projectBox");
+const closeButton = document.querySelectorAll(".close-button");
 
-var trigger = document.querySelectorAll(".projectBox");
-var closeButton = document.querySelector(".close-button");
+function toggleModal(targetModal) {
+    targetModal.classList.toggle("show-modal");
+}
+function closeButtonToggleModal() {
+    modal.classList.toggle("show-modal");
+}
 
 // Bad solution, not DRY:
-// possibly pass param name into toggleModal?
-
-function toggleModal1() {
-    modal1.classList.toggle("show-modal");
-}
-function toggleModal2() {
-    modal2.classList.toggle("show-modal");
-}
-
 function windowOnClick(event) {
-    if (event.target === modal1) {
-        toggleModal1();
+    if (event.target === modal_1) {
+        toggleModal(modal_1);
     }
-    else if (event.target === modal2) {
-        toggleModal2();
+    else if (event.target === modal_2) {
+        toggleModal(modal_2);
+    }
+    else if (event.target === modal_3) {
+        toggleModal(modal_3);
+    }
+    else if (event.target === modal_4) {
+        toggleModal(modal_4);
+    }
+    else if (event.target === modal_5) {
+        toggleModal(modal_5);
+    }
+    else if (event.target === modal_6) {
+        toggleModal(modal_6);
     }
 }
 
-// what I want to do
-// target all the modals in the modal
-// loop through and attach their respective modals?
-
-// pass into toggleModal the chosen modal?
-// for(let i=0; i < trigger.length; i++) {
-//     trigger[i].addEventListener("click", toggleModal);
-// }
-
-trigger[0].addEventListener("click", toggleModal1);
-trigger[1].addEventListener("click", toggleModal2);
-
-
-closeButton.addEventListener("click", toggleModal1);
-closeButton.addEventListener("click", toggleModal2);
-
-
-
+// pass the targetModal into toggleModal function
+for (let i = 0; i < trigger.length; i++) {
+    let targetModal = document.querySelector(`#modal-${i + 1}`);
+    trigger[i].addEventListener("click", toggleModal.bind(null, targetModal), false);
+    closeButton[i].addEventListener("click", toggleModal.bind(null, targetModal), false);
+}
 
 window.addEventListener("click", windowOnClick);
