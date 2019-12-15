@@ -1,207 +1,322 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="description" content="Iqbal's website">
+        <meta name="keywords" content="iqbal website, web dev, 
+            software developer, iqbal anwar, iqbalaanwar">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="description" content="Iqbal's website">
-    <meta name="keywords" content="iqbal website, web dev, 
-    software developer, iqbal anwar">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--Favicon-->
+        <link rel="icon" href="/images/logo.PNG">
+        
+        <title>Iqbal Anwar Portfolio - iqbalanwar.github.io</title>
+    </head>
+    <body>
+        <header>
+            <div class="borderBox">
+                <div class="intro">
+                    <h1>Iqbal Anwar</h1>
+                    <p class="headline">{ Full-Stack Software Engineer }</p>
+                    <div class="social-media">
+                        <a href="https://linkedin.com/in/iqbalaanwar" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/iqbalanwar" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="mailto:iqbalaanwar@gmail.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                    <a class="view-btn" href="#about">View My Work <i class="fa fa-sort-down"></i></a>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar" id = "topNav">
+            <a class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <!-- <a href="#">Experience</a> -->
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+            <a href="/files/iqbal_anwar_resume.pdf" target="_blank">Resume</a>
+        </nav>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <title>Iqbal A. Anwar</title>
-</head>
-
-<body data-spy="scroll" data-target="#navbar-top" data-offset="50">
-
-    <!--NAVBAR-->
-
-    <nav id="navbar-top" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">IAA</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <h2 id="about"> &lt; About Me &gt;</h2>
+            <div class="about">
+                <p class="aboutText">
+                    Pivoting from applied math into software development, I am an engineer that stacks statistical analysis and mathematical
+                    knowledge on top of practical programming techniques to build quality, scalable applications. 
+                </br></br>
+                    Driven by intersecting my analytical background and minute attention to detail with the creative outlet of programming, 
+                    my goal is to simplify complex concepts into programs that people can use in their everyday. With my experience in 
+                    front-end design and back-end infrastructure, I construct efficient and elegant programming solutions.
+                </p>
+                <div class="skillsContainer">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About me
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#myBackground">Background</a>
-                    </li>
-
-                    <!--li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Background
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#experience">Experience</a>
-                            <a class="dropdown-item" href="#skills">Skills</a>
-                            <a class="dropdown-item" href="#achievements">Achievements</a>
+                    <span>
+                        <p class="skillsTitle"></p>
+                        <p class="cursorLine"></p>
+                    </span>
+                    <div class="skills">
+                        <div class="bgCircle item">
+                            <img src="images/HTML5_Badge.png" alt="HTML5 badge" title="HTML5 Badge">
+                            <p>HTML5</p>
                         </div>
-                    </li-->
-
-                    <!--li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li-->
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!--div class="header-img">
-        <img src="images/skyline.jpg" alt="header image" class="img-fluid"/>
-        <div class="headerText">
-            <h1>Hey, I'm Iqbal A. Anwar</h1>
-            <p>Computer Science and Math student <br>
-            Dabbler in Web and Mobile App Development</p>
-            <a type="button" alt="Iqbal's LinkedIn" class="btn btn-success" href="https://www.linkedin.com/in/iqbalaanwar">Learn more</a>
-        </div>
-    </div-->
-
-    <!--JUMBOTRON HERO IMAGE-->
-    <div class="jumbotron">
-        <div class="container-fluid"> 
-            <h1 class="display-4">Hey, I'm Iqbal</h1>
-            <p class="lead"> Computer Science and Math graduate <br>
-            Web Developer and Software Engineer </p>
-            <hr class="my-4">
-            <!--a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/iqbalaanwar" role="button" alt="Iqbal's LinkedIn">Learn more</a-->
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/iqbalaanwar" target="_blank"></a>
-            <a class="fa fa-github" href="https://github.com/iqbalanwar" target="_blank"></a>
-        </div>
-    </div>
-
-    <div class="container">
-        <div id="about-me" class="content-parts">
-            <h1 class="title">ABOUT ME</h1>
-            <div class="row">
-                <div class="col-md-8 sm-8">
-                    <p class="detail"><tab>I recently graduated from the City College of
-                            New York as an Applied Mathematics and Computer Science student, and my experience stems from my education
-                            at CCNY and my workplace tasks. I have taken several computer science courses, including discrete mathematics
-                            and object oriented programming, which developed my core understanding of computer programming and 
-                            development. Additionally, I have taken several mathematics courses, such as computational probability and 
-                            statistics, which have refined my competency for algorithmic and numerical thinking to comprehend technical 
-                            tasks. At my previous workplace, I was a web-developer and a project manager. The latter of these two roles
-                            had responsibilities involved in documentation of development-related progress and creating reports outlining 
-                            current tasks and future goals for the team. These project management duties enabled me to verbalize my 
-                            educational understanding of data and programming, resulting in strong team coordination.
-                    </p>
-                </div>
-                <div class="col-md-4 sm-4 text-center">
-                    <img alt="profile pic" class="profilePic img-thumbnail"/>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr class="my-4"> <!--THIS IS A SECTION DIVIDER-->
-    
-    <h1 class="title">SKILLS AND EXPERIENCE</h1>
-    <div id="myBackground" class="carousel slide" data-ride="carousel" data-pause="hover">
-        <div class="carousel-inner">
-            <div class="carousel-item active" id="experience">
-                <!--img class="d-block w-100" src="/images/skyline.jpg" alt="First slide"-->
-                <h4>Education</h4>
-                <div class="information">
-                    <em><strong>City College of New York:</em></strong>
-                    <br>Bachelor of Science: Applied Mathematics, Computer Science
+                        <div class="bgCircle item">
+                            <img src="images/CSS3_Badge.png" alt="CSS3 badge" title="CSS3 badge">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="bgCircle item">
+                            <img src="images/JS_Badge.png" alt="JavaScript badge" title="JavaScript badge">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="bgCircle item">
+                            <img class="react_logo" src="images/react.png" alt="ReactJS logo" title="ReactJS badge">
+                            <p>React</p>
+                        </div>
+                        <div class="bgCircle item">
+                            <img class="java_logo" src="images/java.png" alt="Java logo" title="Java Logo">
+                            <p>Java</p>                           
+                        </div>
+                        <div class="bgCircle item">
+                            <img src="images/spring_2.png" alt="Spring Boot logo" title="Spring Boot Logo">
+                            <p>Spring Boot</p>
+                        </div>
+                        <div class="bgCircle item">
+                            <img src="images/postgres.png" alt="Postgres logo" title="Postgres Logo">
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div class="bgCircle item">
+                            <img src="images/mongodb.png" alt="MongoDB logo" title="MongoDB Logo">
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="carousel-item" id="skills">
-                <h4>Skills</h4>
-                <div class="information">
-                    <em><strong>Programming:</em></strong>
-                    <br>High proficiency in C++, JavaScript, React, CSS3/HTML5, Bootstrap, Matlab,
-                    Python, SQL, MongoDB, and AWS. Have also learned Ruby on Rails and Java.
-
-                    <br>
-                    <em><strong>General:</em></strong>
-                    <br>Strong competency in Microsoft software, including Excel, Access and Azure, and
-                    in using JIRA for project management. Have experience in using AnyDesk for
-                    remote work, and Active Directory. Also have experience in IT (A+/NET+).  
-                </div>              
+            <h2 id="projects"> &lt; Projects &gt; </h2>
+            <div class="projects">
+                <a class="projectBox item">
+                    <p>Day-To-Day</p>
+                </a>
+                <a class="projectBox item">
+                    <p>Officey</p>
+                </a>
+                <a class="projectBox item">
+                    <p>SpotTunes</p>
+                </a>
+                <a class="projectBox item">
+                    <p>R-P-S</p>
+                </a>
+                <a class="projectBox item">
+                    <p>PixArt</p>
+                </a>
+                <a class="projectBox item">
+                    <p>Moi Website</p>
+                </a>
             </div>
+        </div>
 
-            <div class="carousel-item" id="acheivements">
-                <h4>Achievements</h4>
-                <div class="information">
-                    <em><strong>Developer Week NYC 2018:</em></strong>
-                    <br><em>Wowza WebRTC – Invia</em>
-                    <ul style="text-align: left">
-                        <li><a href="https://www.wowza.com/blog/wowza-sponsors-low-latency-streaming-challenges-at-nyc-hackathon" target="_blank">Hackathon Winner Article</a></li>
-                        <li>Built an application that allows remote live-streaming while video chatting
-                            multiple users.</li>
-                        <li>Front-end was implemented in HTML and Bootstrap, while back-end used the
-                            Wowza WebRTC and related API for low-latency streaming</li>
-                    </ul>
+        <!-- The beauty of React: this would all be one component -->
+        <div class="modals">
+            <div class="modal" id="modal-1">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="image-and-about-project">
+                        <img src="images/logo.PNG" class="modal-image" />
+                        <div class="about-project">
+                            <h3>Day-To-Day</h3>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                                <span>AWS</span>
+                                <span>Git</span>
+                                <span>Figma</span>
+                            </div>
+                            <a href="#">Github</a>
+                            <p>
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal" id="modal-2">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="image-and-about-project">
+                        <img src="images/logo.PNG" class="modal-image" />
+                        <div class="about-project">
+                            <h3>Officey</h3>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Redux</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                                <span>Git</span>
+                            </div>
+                            <p>
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal" id="modal-3">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="image-and-about-project">
+                        <img src="images/logo.PNG" class="modal-image" />
+                        <div class="about-project">
+                            <h3>SpotTunes</h3>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Redux</span>
+                                <span>Spring Boot</span>
+                                <span>MongoDB</span>
+                                <span>AWS</span>
+                                <span>Git</span>
+                            </div>
+                            <p>
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal" id="modal-4">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="image-and-about-project">
+                        <img src="images/logo.PNG" class="modal-image" />
+                        <div class="about-project">
+                            <h3>Rock-Paper-Scissors</h3>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Redux</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                                <span>Git</span>
+                            </div>
+                            <p>
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal" id="modal-5">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="image-and-about-project">
+                        <img src="images/logo.PNG" class="modal-image" />
+                        <div class="about-project">
+                            <h3>Pixel Art</h3>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Redux</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                                <span>Git</span>
+                            </div>
+                            <p>
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal" id="modal-6">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="image-and-about-project">
+                        <img src="images/logo.PNG" class="modal-image" />
+                        <div class="about-project">
+                            <h3>Moi Inc</h3>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Redux</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                                <span>Git</span>
+                            </div>
+                            <p>
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                                This is some text about my project! This is some text about my project!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#myBackground" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myBackground" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
 
-    <hr class="my-4"> <!--THIS IS A SECTION DIVIDER-->
+        <footer id="contact"> 
+            <form class="sendEmail" method="post" onsubmit="contactMessage(event)" enctype="text/plain">
+                <h2>Contact Me</h2>
+                <input class="name" placeholder="Name" type="text" required />
+                <input class="email" placeholder="Email" type="email" required />
+                <textarea class="message" placeholder="Enter Message" type="text" required></textarea>
+                <input type="submit" value="Send" />
+            </form>
+        </footer>
 
-    <div class="container">
-        <div id="contact" class="content-parts">
-            <h1 class="title">CONTACT ME</h1>
-            <p>Feel free to contact me at <a href="mailto:iqbalaanwar@gmail.com">Iqbalaanwar@gmail.com</a></p>
-        </div>
-    </div>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+        <script src="js/firebase-sdk.js"></script>
 
-    <footer id="mainFooter" class="bg-dark">
-        <!--Forms-->
-        <!--form action="process.php" method="POST">
-            <div>
-                <label>First Name: </label>
-                <input type="text" name="firstName">
-            </div>
-            <div>
-                <label>Last Name: </label>
-                <input type="text" name="lastName">
-            </div>
-            <div>
-                <label>Message</label>
-                <textarea name="message"></textarea>
-            </div>
-        </form-->
-        Copyright &copy; Iqbal Anwar, 2019
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
-
+    </body>
 </html>

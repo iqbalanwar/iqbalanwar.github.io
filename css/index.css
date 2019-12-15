@@ -1,111 +1,324 @@
+/* ===== Default values ===== */
+* {
+    margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 15vh;
+}
 body {
-    background-color: #f1f1f1;
-    position: relative;
+    font-family: 'Ubuntu', sans-serif;
 }
-.content-parts {
-    padding: 2% 0% 2% 0%;
+.container {
+    margin: 50px auto;
+    width: 80%;
 }
-.my-4 {
-    border: 1px solid black;
-    max-width: 75%;
+.container p {
+    font-size: 1.4rem;
+    margin-bottom: 5%;
 }
-.title {
+.container h2 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 3rem;
+    margin: 3% 0%;
     text-align: center;
-    padding-bottom: 3%;
-} 
-
-/*HEADER JUMBOTRON*/
-.jumbotron {
-    background-image: url("/images/poconos view.jpg");
-    background-size: cover;
-    position: relative;
-    height: 90vh;
-    border-radius: 0%;
-
-    /*This line feels kinda hacky, there should be
-      a more responsive way: */
-    padding-top: 10%;
 }
-.jumbotron .container-fluid {
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    transition: all .2s ease-out;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #305586;
+    height: 100vh;
+    display: flex;
+}
+.borderBox {
     text-align: center;
+    border: 10px solid white;
+    margin: auto;
+    min-width: 55vw;
+}
+.intro {
     color: white;
-    background:rgba(0,0,0,0.2);
-    padding: 2rem;
-    border: 5px solid rgba(0,0,0,0.1);
-    border-radius: 10px;
-    z-index: 2;
+    border: 3px solid white;
+    margin: 5%;
+    padding: 5%;
 }
-.jumbotron .my-4 {
-    border: 1px solid white;
-    max-width: 50%;
+.intro > h1 {
+    font-size: 10vmin;
+    padding-bottom: 5%;
 }
-/*FOR THE BUTTONS IN THE JUMBOTRON*/
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
+.intro > p {
+    font-size: 5vmin;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid white;
+}
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7%;
+}
+.social-media > a {
+    color: white;
+    font-size: 6vmin;
+    transition: all 200ms ease-in-out;
+}
+.social-media > a:hover {
+    color: lightblue;
+}
+.view-btn {
+    color: white;
     text-align: center;
     text-decoration: none !important;
-    margin: 0px 2px 0px 2px;
-    border-radius: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 350ms ease-in-out;
 }
-.fa:hover {
-    opacity: 0.7;
+.fa-sort-down {
+    transform: translateY(-20%);
+    padding: 0 .5vw;
 }
-.fa-linkedin {
-    background-color: #007bb5;
-    color: white;
+.view-btn:hover {
+    background-color: white;
+    color: #305586;
+    font-size: 3vmin;
 }
-.fa-github {
-    background-color: #c7c7c7;
-    color: rgb(39, 39, 39);
+/* ===== Navbar ===== */
+.navbar {
+    border-bottom: 5px solid #305586;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5%;
+    position: sticky;
+    top: 0;
+}
+.navbar a {
+    text-decoration: none !important;
+    font-size: 25px;
+    color: black;
+}
+.navbar a:hover {
+    color: royalblue;
+}
+.navbar .icon {
+    display: none;
 }
 
-/*ABOUT ME*/
-.profilePic {
-    content: url("/images/profile_pic.jpg");
-    height: auto;
-    max-width: 65%;
-    border-radius: 100%;
+/* ======================================== CONTENT ======================================== */
+
+/* ===== About ===== */
+.about {
+    display: flex;
+    border-bottom: 5px solid #305586;
+    padding-bottom: 5%;
+}
+.aboutText {
+    margin-right: 10%;
+    width: 100%;
 }
 
-/*SKILLS AND EXPERIENCE*/
-#myBackground {
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.skillsContainer span {
+    /* display: flex;
+    justify-content: center; */
     text-align: center;
+    color: black;
 }
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
-}
-.information { /*Feels kinda hacky*/
-    padding: 0% 15% 0% 15%;
-}
-
-/*CONTACT ME*/
-
-/*FOOTER SECTION, MAYBE ADD A NAME, NUMBER, AND MESSAGE?*/
-#mainFooter {
-    text-align: center;
-    font-size: 18px;
+/* .cursorLine {
     background-color: black;
-    color: white;
-    padding: 1% 0% 1% 0%;
+    width: 10px;
+    margin-left: 1%;
+} */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    min-width: 20vw;
+    width: 35vw;
 }
 
-/*
-ORIGINALLY I USED THE FOLLOWING FOR A HERO IMAGE:
-.header-img {
-    background-image: url("/images/skyline.jpg");
-    position: relative;
-    background-size: contain;
-    color: lightgreen;
+.bgCircle {
+    background-color: black;
+    width: 6vw;
+    height: 6vw;
+    margin: 1vw;
+    border-radius: 100%;
+}
+.bgCircle:hover {
+    background-color: #3d3d3d;
+    transition: all .2s ease-out;
+}
+.bgCircle img {
+    width: 2.5vw; /* 35px */
+    margin-bottom: 10%;
+}
+.bgCircle p {
+    color: white;
     text-align: center;
+    font-size: .75vw; /* 13px */
 }
-.headerText {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+/* ===== Projects ===== */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 65vw;
+    flex-wrap: wrap;
 }
+.projects p {
+    color: white;
+}
+.projectBox {
+    background-color: black;
+    min-width: 300px;
+    width: 300px; /*12vw = 200px*/
+    height: 300px; /*24vh = 200px*/
+    margin: 10px;
+}
+.projectBox:hover {
+    background-color: #3d3d3d;
+    width: 310px; /*14vw = 220px*/
+    height: 310px; /*26vh = 220px*/
+    transition: all .2s ease-out;
+}
+
+/* ======================================== FOOTER ======================================== */
+footer {
+    background-color: #305586;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sendEmail {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 350px;
+}
+.sendEmail h2 {
+    color: white;
+}
+textarea {
+    height: 250px;
+}
+input, textarea {
+    padding: 10px 10px;
+    margin-bottom: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+@media only screen and (max-width: 1280px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 60vw;
+    }
+    .bgCircle {
+        width: 12vw;
+        height: 12vw;
+    }
+    .bgCircle img {
+        width: 5vw;
+    }
+    .bgCircle p {
+        font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    html {
+        scroll-padding: 7.8vh;
+    }
+}
+@media only screen and (max-width: 650px) {
+    /* Eventually, this will be a carousel 
+       For now, this is acceptable */
+    html {
+        scroll-padding: 6vh;
+    }
+    .skills {
+        width: 70vw;
+    }
+    .bgCircle {
+        width: 15vw;
+        height: 15vw;
+    }
+    .bgCircle img {
+        width: 5.5vw;
+    }
+    .bgCircle p {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        scroll-padding: 10vh;
+    }
+    .navbar a {
+        display: none;
+    }
+    .navbar {
+        display: block;
+        text-align: right;
+        padding: 2.2vh 9.5vw 2.2vh 0;
+    }
+    .navbar .icon {
+        display: block;
+    }
+}
+@media only screen and (max-width: 600px) { 
+    /* Dropdown */
+    .responsive {
+        position: sticky;
+        top: 0;
+        background: white;
+        font-size: 1.5em;
+    }
+    .responsive a {
+        display: block;
+        text-align: left;
+        border-bottom: 5px solid #305586;
+        text-decoration: none !important;
+        padding: 4vmin 10vmin;
+    }
+    .responsive .icon {
+        text-align: right;
+    }
+} 
+ 
+
+/* ========================================================= */
+/* 
+    To Do list: 
+    - Fix skills circles, so they become 2x4 under 1000px,
+    and single (or scoll menu?) At 750px
+
+    - Have social media buttons at footer!
+    - Allow to see older version of website
 */
