@@ -221,7 +221,7 @@ footer {
 textarea {
     height: 250px;
 }
-input, textarea, button {
+input, textarea {
     padding: 10px 10px;
     margin-bottom: 3%;
     font-family: 'Ubuntu', sans-serif;
