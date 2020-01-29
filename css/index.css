@@ -222,17 +222,24 @@ footer {
     background-color: #305586;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    color: white;
+}
+footer > div {
+    padding-left: 5%;
+    border-left: 5px solid white;
+    color: white;
+}
+footer > div > h3 {
+    font-size: 2.5vw;
+    padding-bottom: 10%;
 }
 .sendEmail {
     display: flex;
     flex-direction: column;
     width: 30%;
     min-width: 350px;
-}
-.sendEmail h2 {
-    color: white;
 }
 textarea {
     height: 250px;
