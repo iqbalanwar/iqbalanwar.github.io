@@ -102,6 +102,7 @@ header {
     padding: 1.5%;
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 .navbar a {
     text-decoration: none !important;
@@ -195,10 +196,25 @@ header {
     margin: 10px;
 }
 .projectBox:hover {
-    background-color: #3d3d3d;
-    width: 310px; /*14vw = 220px*/
-    height: 310px; /*26vh = 220px*/
+    /* background-color: #3d3d3d; */
+    /* opacity: .8; */
+    width: 310px; /* => 14vw = 220px*/
+    height: 310px; /* => 26vh = 220px */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
     transition: all .2s ease-out;
+}
+
+#daytoday {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/images/projects/daytoday.PNG") no-repeat;
+    background-size: 300px 300px;
+}
+#rps {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/images/projects/rps.jpg") no-repeat;
+    background-size: 300px 300px;
+}
+#pixelart {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/images/projects/pixelart.png") no-repeat;
+    background-size: 300px 300px;
 }
 
 /* ======================================== FOOTER ======================================== */
