@@ -103,3 +103,8 @@ I'll just make a separate css just for them.
 .tech-stack span:hover {
     background-color: lightblue;
 }
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}

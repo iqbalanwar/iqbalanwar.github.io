@@ -109,34 +109,36 @@
 
             <h2 id="projects"> &lt; Projects &gt; </h2>
             <div class="projects">
-                <a class="projectBox item">
+                <a class="projectBox item" id="daytoday">
                     <p>Day-To-Day</p>
                 </a>
-                <a class="projectBox item">
+                <a class="projectBox item" id="officey">
                     <p>Officey</p>
                 </a>
-                <a class="projectBox item">
+                <a class="projectBox item" id="spottunes">
                     <p>SpotTunes</p>
                 </a>
-                <a class="projectBox item">
+                <a class="projectBox item" id="rps">
                     <p>R-P-S</p>
                 </a>
                 <a class="projectBox item" id="pixelart">
                     <p>Pixel Art</p>
                 </a>
-                <a class="projectBox item">
+                <a class="projectBox item" id="moi">
                     <p>Moi Website</p>
                 </a>
             </div>
         </div>
 
-        <!-- The beauty of React: this would all be one component -->
+        <!-- The beauty of React: this would all be one component.
+             I can also make this one chunk of code to be called in
+             JavaScript, but I'll simplify it later. -->
         <div class="modals">
             <div class="modal" id="modal-1">
                 <div class="modal-content">
                     <span class="close-button">&times;</span>
                     <div class="image-and-about-project">
-                        <img src="images/logo.PNG" class="modal-image" />
+                        <img src="images/projects/daytoday.PNG" class="modal-image" />
                         <div class="about-project">
                             <h3>Day-To-Day</h3>
                             <div class="tech-stack">
@@ -147,14 +149,14 @@
                                 <span>AWS</span>
                                 <span>Figma</span>
                             </div>
-                            <a href="#">Github</a>
+                            <span class="project-links">
+                                <a href="https://github.com/iqbalanwar/DayToDay">GitHub</a>
+                            </span>
                             <p>
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
+                                Day-To-Day is an Event Calendar with CRUD Functionality. Users can sign up,
+                                then choose any date to create events. If there are events for that date, those
+                                events are displayed, and the user has the option to list the event as complete,
+                                which deletes the event from the database.
                             </p>
                         </div>
                     </div>
@@ -169,20 +171,22 @@
                         <div class="about-project">
                             <h3>Officey</h3>
                             <div class="tech-stack">
-                                <span>React</span>
-                                <span>Redux</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
                                 <span>Spring Boot</span>
                                 <span>PostgreSQL</span>
-                                <span>AWS</span>
                                 <span>Git</span>
                             </div>
+                            <span class="project-links">
+                                <a href="https://github.com/iqbalanwar/Officey-Full-Stack">GitHub</a>
+                            </span>
                             <p>
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
+                                Officey is a Reddit-Clone/Social Media application with CRUD functionality.
+                                Users can sign up, create posts, delete posts, create comments on those posts,
+                                and delete comments as well. The main page, once users sign up/login, displays all
+                                the posts and comments from all users. Users also have a profile to view the posts
+                                they previously made, as well as a brief overview of their personal information.
                             </p>
                         </div>
                     </div>
@@ -197,20 +201,19 @@
                         <div class="about-project">
                             <h3>SpotTunes</h3>
                             <div class="tech-stack">
-                                <span>React</span>
-                                <span>Redux</span>
                                 <span>Spring Boot</span>
-                                <span>MongoDB</span>
-                                <span>AWS</span>
+                                <span>PostgreSQL</span>
                                 <span>Git</span>
                             </div>
+                            <span class="project-links">
+                                <a href="https://github.com/iqbalanwar/SpotTunes">GitHub</a>
+                            </span>
                             <p>
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
+                                SpotTunes is a conceptual Spotify back-end, using four data models: User, User_role, 
+                                Song and Playlist. The User has the fields id, username and password. The Song table 
+                                has the fields id, title and length. The User and User_role are mapped to each other 
+                                (one-to-many relationship). The User and Song tables are mapped to each other.
+                                The Playlist JOIN table connects user_id and song_id with a many-to-many relationship.
                             </p>
                         </div>
                     </div>
@@ -221,24 +224,20 @@
                 <div class="modal-content">
                     <span class="close-button">&times;</span>
                     <div class="image-and-about-project">
-                        <img src="images/logo.PNG" class="modal-image" />
+                        <img src="images/projects/rps.jpg" class="modal-image" />
                         <div class="about-project">
                             <h3>Rock-Paper-Scissors</h3>
                             <div class="tech-stack">
-                                <span>React</span>
-                                <span>Redux</span>
-                                <span>Spring Boot</span>
-                                <span>PostgreSQL</span>
-                                <span>AWS</span>
-                                <span>Git</span>
+                                <span>Java</span>
                             </div>
+                            <span class="project-links">
+                                <a href="https://github.com/iqbalanwar/rock-paper-scissors">GitHub</a>
+                            </span>
                             <p>
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
+                                A straightforward Rock-Paper-Scissors game where users can play each other,
+                                or against a computer, in terminal. Along with this, history of games during 
+                                a play session is saved. To play the game, the user needs a Java IDE -- the IDE
+                                used for the project was IntelliJ IDEA.
                             </p>
                         </div>
                     </div>
@@ -257,14 +256,16 @@
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                             </div>
-                            <a href="https://github.com/iqbalanwar/pixelart">Github</a>
+                            <span class="project-links">
+                                <a href="https://github.com/iqbalanwar/pixelart">GitHub</a>
+                                <a href="https://iqbalanwar.github.io/pixelart/">Live</a>
+                            </span>
                             <p>
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
+                                PixelArt is a JavaScript pixel-art painting app. The idea came from this project. In 
+                                this app, color over the canvas by hovering over the tiles you want to color, based
+                                on your chosen color. You can also add a color swatch, and the app will store your
+                                current swatch along with your last three swatches. When you click on each of those 
+                                boxes, it should set the current brush color back to that color.
                             </p>
                         </div>
                     </div>
@@ -280,19 +281,19 @@
                             <h3>Moi Inc</h3>
                             <div class="tech-stack">
                                 <span>React</span>
-                                <span>Redux</span>
-                                <span>Spring Boot</span>
-                                <span>PostgreSQL</span>
-                                <span>AWS</span>
-                                <span>Git</span>
+                                <span>HTML</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>Rails</span>
+                                <span>MongoDB</span>
                             </div>
                             <p>
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
-                                This is some text about my project! This is some text about my project!
+                                MOI Inc was a salon/barbershop booking app, where users can sign in
+                                and make appointments to a hair specialist of their preference. The app
+                                has since sunsetted and is no longer available publicly. That being said, I have 
+                                assets for the work I've done for MOI. However, I cannot provide them explicitly
+                                through my website. If you'd like to see the work I've done at MOI, please message
+                                me and I can show you the assets I still have.
                             </p>
                         </div>
                     </div>
