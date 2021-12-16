@@ -228,12 +228,13 @@ footer {
 }
 footer > div {
     padding-left: 5%;
-    border-left: 5px solid white;
+    /*border-left: 5px solid white;*/
     color: white;
 }
 footer > div > h3 {
     font-size: 2.5vw;
     padding-bottom: 10%;
+    text-align: center;
 }
 .sendEmail {
     display: flex;
